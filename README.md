@@ -58,7 +58,7 @@ Các chức năng chính của dự án tập trung vào những nhu cầu cơ b
 
 Sơ đồ mạch dưới đây mô tả cách kết nối các thành phần chính trong hệ thống:
 
-![Schematic Diagram](docs/images/schematic.png)
+![Schematic Diagram](Schematic_Smart_Power_Socket_2026-01-17.png)
 
 ---
 
