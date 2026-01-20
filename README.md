@@ -71,13 +71,5 @@ Sơ đồ mạch dưới đây mô tả cách kết nối các thành phần ch�
 
 ---
 
-## 7. Tác giả
-
-👤 **Minh Nhựt**  
-📍 Việt Nam  
-📘 Lĩnh vực: Embedded Systems – IoT – Firmware
-
----
-
 ⭐ Nếu bạn thấy dự án hữu ích, hãy **Star repository** để ủng hộ và theo dõi các phiên bản tiếp theo!
 
