@@ -8,6 +8,10 @@
 
 static time_t lastSync = 0;   // Last NTP sysc timestamp (time_t)
 
+// Lưu thời gian hợp lệ cuối cùng
+static struct tm lastValidTime;
+static bool hasValidTime = false;
+
 void timeInit() {
   // Synchronize system time (ESP32 RTC) with NTP server
   configTime(GMT_OFFSET_SEC, DAYLIGHT_OFFSET, NTP_SERVER);
@@ -28,8 +32,18 @@ void timeLoop() {
 }
 
 // Get current date and time as broken-down time (struct tm)
-struct tm getNow() {
-  struct tm timeinfo;
-  getLocalTime(&timeinfo);
-  return timeinfo;
+bool getNow(struct tm &out) {
+  // timeout = 0  => KHÔNG block
+  if (getLocalTime(&out, 0)) {
+    lastValidTime = out;     // cache lại thời gian hợp lệ
+    hasValidTime = true;
+    return true;
+  }
+
+  // Nếu chưa có NTP nhưng đã từng có time trước đó
+  if (hasValidTime) {
+    out = lastValidTime;    // dùng lại time cũ (fail-safe)
+  }
+
+  return false;
 }
