@@ -23,7 +23,10 @@ Schedule schedulerGet(uint8_t relay) {
 }
 
 void schedulerLoop() {
-  struct tm now = getNow(); // Get current system time
+  // Get current system time
+  struct tm now;
+  // Chưa có thời gian => bỏ qua scheduler
+  if (!getNow(now)) return;
 
   // Process only at the start of the new minute, avoid repetition
   if (now.tm_min == lastMinute) return;
