@@ -27,7 +27,7 @@ Các chức năng chính của dự án tập trung vào những nhu cầu cơ b
 
 ### ▶️ Video demo trên YouTube
 📺 **Xem video tại đây:**  
-👉 https://www.youtube.com/your-demo-link
+👉 https://youtu.be/xx6T_m5pn1g?si=YuEz3BZqFqyBqOGO
 
 ---
 
