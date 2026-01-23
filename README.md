@@ -39,7 +39,7 @@ Các chức năng chính của dự án tập trung vào những nhu cầu cơ b
 
 ### 🌐 Demo 2 – Bật/tắt relay bằng giao diện Web
 
-![Web Control Demo](Demo_Control_via_Web)
+![Web Control Demo](Demo_Control_via_Web.gif)
 
 ---
 
