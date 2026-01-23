@@ -33,13 +33,13 @@ Các chức năng chính của dự án tập trung vào những nhu cầu cơ b
 
 ### 🔘 Demo 1 – Bật/tắt thủ công bằng nút nhấn
 
-![Manual Switch Demo](docs/gif/manual_switch.gif)
+![Manual Switch Demo](Demo_Control_via_Buttons.gif)
 
 ---
 
 ### 🌐 Demo 2 – Bật/tắt relay bằng giao diện Web
 
-![Web Control Demo](docs/gif/web_control.gif)
+![Web Control Demo](Demo_Control_via_Web)
 
 ---
 
